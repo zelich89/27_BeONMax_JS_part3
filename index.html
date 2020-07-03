@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    <link rel="shortcut icon" href="" type="image/x-icon" />-->
+
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">-->
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Title</title>
+</head>
+
+<body>
+   
+    <header class="header">
+        <div class="container">
+
+            <div class="header__nav">
+                <nav class="header__navbar navbar navbar-expand-lg header__wrapp flex-grow-1">
+                    <a class="header__logo logo" href="/">Cakes</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+                    <div class="header__collapse collapse navbar-collapse d-none" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="header__nav-link nav-item nav-link" href="#">Наши торты</a>
+                            <a class="header__nav-link nav-item nav-link active" href="#">Индивидуальный заказ</a>
+                            <a class="header__nav-link nav-item nav-link" href="#">О нас</a>
+                            <a class="header__nav-link nav-item nav-link" href="#">Как заказать</a>
+                            <a class="header__nav-link nav-item nav-link" href="#">Контакты</a>
+                        </div>
+                    </div>
+                    <a href="tel:+7 906 899 92 96" class="header__nav-tel nav-link d-none d-md-block">
+                        +7 906 899 92 96
+                    </a>
+                </nav>
+
+            </div>
+
+
+            <div class="container-wrapp">
+                <div class="row">
+                    <div class="header__left header__left--indent col-lg-4">
+                        <h1 class="header__title">Торты<br> на заказ</h1>
+                        <div class="header__slogan">Ручная работа</div>
+                        <div class="header__btn btn btn--primary btn--medium">Выбрать торт</div>
+                        <div class="header__utp-box">
+                            <div class="header__utp">
+                                <img class="header__utp-img" src="images/1-icon-1.png" alt="">
+                                <div class="header__utp-text">
+                                    Натуральные <br class="d-none d-sm-block"> ингредиенты
+                                </div>
+                            </div>
+                            <div class="header__utp">
+                                <img class="header__utp-img" src="images/1-icon-2.png" alt="">
+                                <div class="header__utp-text">
+                                    Доставка бесплатно <br class="d-none d-sm-block"> при заказе
+                                    от 2000 рублей*
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <picture class="header__decor">
+                <source media="(max-width: 767px)" srcset="images/cake-mobile.png">
+                <source media="(max-width: 998px)" srcset="images/cake-tablet.png">
+                <source srcset="images/cake-desctop.png">
+                <img src="images/cake-mobile.png" alt="Flowers" style="width:auto;">
+            </picture>
+        </div>
+    </header>
+
+
+</body>
+
+</html>

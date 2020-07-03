@@ -1,0 +1,11 @@
+@mixin font-circle($font-size: $font-size, $line-height: $line-height, $font-weight: null) {
+    font: $font-weight #{$font-size}/#{$line-height} 'Circe';
+}
+
+@mixin font-intro($font-size: $font-size, $line-height: $line-height, $font-weight: null) {
+    font: $font-weight #{$font-size}/#{$line-height} "IntroScriptR";
+}
+
+@mixin font-display($font-size: $font-size, $line-height: $line-height, $font-weight: null) {
+    font: $font-weight #{$font-size}/#{$line-height} "Display";
+}

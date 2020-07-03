@@ -1,0 +1,279 @@
+a,
+a:hover {
+    text-decoration: none;
+}
+
+button,
+button:focus {
+    outline: none;
+}
+
+.container-wrapp {
+    @include media-breakpoint-down(md) {
+        padding-left: $grid-gutter-width;
+        padding-right: $grid-gutter-width;
+    }
+    @include media-breakpoint-down(sm) {
+        padding-left: $grid-gutter-width / 2;
+        padding-right: $grid-gutter-width /2;
+    }
+}
+
+.header {
+    padding-top: 50px;
+    position: relative;
+    overflow: hidden;
+    &__collapse {
+        @include media-breakpoint-down(md) {
+            position: absolute;
+            top: 60px;
+            left: 0;
+            right: 0;
+            background-color: $white;
+            @include media-breakpoint-down(sm) {
+                top: 40px;
+            }
+        }
+    }
+    @include media-breakpoint-down(md) {
+        &__wrapp {
+            padding-left: $grid-gutter-width * 2;
+            padding-right: $grid-gutter-width * 2;
+            @include media-breakpoint-down(sm) {
+                padding-left: $grid-gutter-width;
+                padding-right: $grid-gutter-width;
+            }
+        }
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        @include media-breakpoint-down(md) {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: $white;
+            display: block;
+            z-index: 5;
+        }
+    }
+    &__logo {
+        margin-right: 10px;
+    }
+    &__nav-link {
+        color: $body-color;
+        @include font-circle(13px, 24px);
+        text-transform: uppercase;
+        @include media-breakpoint-down(md) {
+            text-align: center;
+            border-bottom: 1px solid #dedede;
+            border-top: 1px solid #e4e4e4;
+            &:first-child {
+                border-top: none;
+            }
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+    &__navbar .navbar-nav .nav-link {
+        padding-right: 20px;
+        padding-left: 20px;
+        &.active {
+            color: $primary;
+        }
+    }
+    &__navbar {
+        @include media-breakpoint-down(md) {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        @include media-breakpoint-down(sm) {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+    &__nav-tel {
+        margin-left: auto;
+        font-weight: bold;
+        padding-right: 0;
+        @include font-circle(15px, 24px);
+        color: $body-color;
+    }
+    &__collapse {
+        @include media-breakpoint-down(md) {
+            max-width: 320px;
+            background-color: #e7e7e7;
+        }
+    }
+    &__left {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        &--indent {
+            padding: 160px $grid-gutter-width / 2;
+            @include media-breakpoint-down(md) {
+                padding: 112px $grid-gutter-width / 2;
+            }
+        }
+    }
+    &__title {
+        @include font-display(78px, 78px, bold);
+        margin-bottom: 24px;
+        @include media-breakpoint-down(md) {
+            @include font-display(60px, 60px, bold);
+        }
+        @include media-breakpoint-down(sm) {
+            @include font-display(40px, 40px, bold);
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+    &__slogan {
+        @include font-intro(40px, 40px);
+        margin-bottom: 60px;
+        color: $dark;
+        @include media-breakpoint-down(md) {
+            @include font-intro(36px, 77px);
+        }
+        @include media-breakpoint-down(sm) {
+            @include font-intro(22px, 40px);
+            text-align: center;
+        }
+    }
+    &__btn {
+        margin-bottom: 127px;
+        align-self: flex-start;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 146px;
+        }
+        @include media-breakpoint-down(sm) {
+            margin-left: auto;
+            margin-right: auto;
+            order: 1;
+            margin-bottom: 0;
+        }
+    }
+    &__utp {
+        display: flex;
+    }
+    &__utp-box {
+        display: flex;
+        @include media-breakpoint-down(sm) {
+            display: block;
+            margin-bottom: 40px;
+        }
+    }
+    &__utp {
+        margin-right: 50px;
+        align-items: flex-start;
+        &:last-child {
+            margin-right: 0;
+        }
+        @include media-breakpoint-down(sm) {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+    &__utp-img {
+        margin-right: 10px;
+        flex-shrink: 0;
+        @include media-breakpoint-down(sm) {
+            width: 33px;
+        }
+    }
+    &__utp-text {
+        padding-top: 14px;
+        @include font-circle(14px, 18px);
+        color: #000;
+        @include media-breakpoint-down(sm) {
+            padding-top: 4px;
+        }
+    }
+    &__decor {
+        position: absolute;
+        width: 1008px;
+        height: 941px;
+        top: 107px;
+        right: 0;
+        pointer-events: none;
+        @include media-breakpoint-down(md) {
+            width: 496px;
+            height: 571p;
+        }
+        @include media-breakpoint-down(sm) {
+            width: 320px;
+            height: 225px;
+            top: -150px;
+            left: -100px;
+            right: 0;
+            margin: 0 auto;
+        }
+    }
+}
+
+.logo {
+    @include font-display(23px, 32px, bold);
+    color: $body-color;
+    @include media-breakpoint-down(sm) {
+        @include font-display(16px, 32px, bold);
+    }
+}
+
+.navbar-toggler,
+.navbar-toggler-icon {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggler {
+    padding-right: 0;
+}
+
+.navbar-toggler-icon {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.navbar-toggler-icon span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    background-color: #000;
+    margin-bottom: 6px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 4px;
+        width: 20px;
+    }
+}
+
+.btn {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    transition: color .2s ease, background-color .2s ease;
+    @include font-circle(13px, 24px);
+    text-transform: uppercase;
+    &:hover {
+        outline: none;
+    }
+}
+
+.btn--primary {
+    background-color: $primary;
+    color: $white;
+}
+
+.btn--medium {
+    padding: 13px 66px;
+    border-radius: 25px;
+}
