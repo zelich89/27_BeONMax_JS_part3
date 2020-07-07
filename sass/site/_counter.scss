@@ -1,0 +1,42 @@
+.counter {
+
+  &__block {
+    width: 50%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__option {
+    font-size: 22px;
+    line-height: 28px;
+    color: $primary-color;
+  }
+  &__input {
+    font-size: 46px;
+    line-height: 65px;
+    color: $primary-color;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 1px solid $primary-color;
+    width: 120px;
+  }
+  &__select {
+    width: 230px;
+    height: 35px;
+    padding-left: 10px;
+    background-color: rgba(199, 126, 48, 0.8);
+    color: #fff;
+    border: none;
+  }
+  &__total-block {
+    text-align: right;
+    font-size: 40px;
+    line-height: 56px;
+    color: $primary-color;
+  }
+  &__total {
+    font-size: 46px;
+    line-height: 60px;
+  }
+}

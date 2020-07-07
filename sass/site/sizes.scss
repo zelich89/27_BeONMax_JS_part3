@@ -1,0 +1,73 @@
+
+$search-icon-xl: 40px;
+
+$direction-md: 48px;
+$direction-xl: 64px;
+
+$view-icon-sm-w: 19px;
+$view-icon-sm-h: 11px;
+$view-icon-md-w: 25px;
+$view-icon-md-h: 14px;
+$view-icon-xl-w: 40px;
+$view-icon-xl-h: 22px;
+
+$cards-avat-size-sm: 64px;
+$cards-avat-size-md: 80px;
+$cards-avat-size-xl: 128px;
+
+$contact-icon: 17px;
+
+$dot-size-sm: 8px; // not work !!!!!
+$dot-size-xl: 14px; // not work !!!!!
+
+$checked: 18px;
+/*$checked-w: 8px;
+$checked-h: 6px;*/
+
+$mark-w: 62px;
+$mark-h: 50px;
+$s-mark-w: 27px;
+$s-mark-h: 23px;
+
+$soc-icon-sm: 16px;
+$soc-icon-xl: 24px;
+
+$user-avatar-sm: 48px;
+$user-avatar-xl: 72px;
+
+$recent-products-sm: 120px;
+$recent-products-md: 160px;
+$recent-products-xl: 262px;
+///////////////////////// class
+
+.user-avatar {
+  width: $user-avatar-sm;
+  height: $user-avatar-sm;
+  @include media-breakpoint-up(xl) {
+    width: $user-avatar-xl;
+    height: $user-avatar-xl;
+  }
+}
+
+.recent-products-size {
+  width: $recent-products-sm;
+  height: $recent-products-sm;
+@include media-breakpoint-up(md) {
+  width: $recent-products-md;
+  height: $recent-products-md;
+}
+@include media-breakpoint-up(xl) {
+  width: $recent-products-xl;
+  height: $recent-products-xl;
+}
+}
+
+.cards-avat-pic {
+  @include square-size($cards-avat-size-sm);
+  @include media-breakpoint-up(md) {
+    @include square-size($cards-avat-size-md);
+  }
+  @include media-breakpoint-up(xl) {
+    @include square-size($cards-avat-size-xl);
+  }
+}

@@ -1,0 +1,49 @@
+body {
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover, &:focus, &:active, &:visited {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.link-text-primary {
+  color: $primary !important;
+  &:hover{
+    color: darken($primary, 20%) !important;
+  }
+  &:focus, &:active, &:visited {
+
+  }
+}
+
+.link-text-dark {
+  color: $dark !important;
+  &:focus, &:active, &:visited {color: inherit}
+  &:hover{
+    color: lighten($dark, 20%) !important;
+  }
+}
+
+.link-text-darker {
+  color: $darker !important;
+  &:hover{
+    color: darken($darker, 20%) !important;
+  }
+}
+
+.link-text-lighter {
+  color: $lighter !important;
+  &:hover{
+    color: darken($lighter, 20%) !important;
+  }
+}
+
+.link-text-white {
+  color: white !important;
+  &:hover{
+    color: white !important;
+  }
+}

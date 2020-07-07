@@ -1,0 +1,12 @@
+.my-btn {
+  @extend .btn;
+  border-radius: 50px;
+}
+
+.plans-t:hover {
+  & .my-btn {
+    transition: all $transition-speed ease;
+    background-color: $primary;
+    border-color: $primary;
+  }
+}

@@ -1,0 +1,28 @@
+.nav {
+  display: block;
+  &__list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-bottom: 0;
+  }
+  &__link {
+
+    &:before {
+      content: '';
+      display: block;
+      margin-top: 4px;
+      height: 1px;
+      width: 100%;
+      background-color: $primary-color;
+    }
+    &:after {
+      content: '';
+      display: block;
+      margin-bottom: 4px;
+      height: 1px;
+      width: 100%;
+      background-color: $primary-color;
+    }
+  }
+}

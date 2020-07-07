@@ -1,0 +1,20 @@
+.social {
+  display: flex;
+  justify-content: center;
+  &__item {
+    cursor: pointer;
+    padding: 17px;
+    border: 1px solid $primary-color;
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+    transition: box-shadow $transition-time ease;
+    &:hover {
+      box-shadow: 0 0 10px #c78030;
+    }
+  }
+  &__svg {
+    width: 25px;
+    height: 25px;
+  }
+}

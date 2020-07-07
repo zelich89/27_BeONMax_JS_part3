@@ -1,0 +1,86 @@
+.search {
+  svg {
+    @include square-size($search-icon-xl);
+  }
+}
+
+.direction-icon {
+  svg {
+    @include square-size($direction-md);
+  }
+  @include media-breakpoint-up(xl) {
+    svg {
+      @include square-size($direction-md);
+    }
+  }
+}
+
+.view-size {
+  svg {
+    width: $view-icon-sm-w;
+    height: $view-icon-sm-h;
+  }
+  @include media-breakpoint-up(md) {
+    svg {
+      width: $view-icon-md-w;
+      height: $view-icon-md-h;
+    }
+  }
+    @include media-breakpoint-up(xl) {
+      svg {
+        width: $view-icon-xl-w;
+        height: $view-icon-xl-h;
+      }
+  }
+}
+
+.count-view {
+  svg {
+    width: $view-icon-sm-w/2;
+    height: $view-icon-sm-h/2;
+  }
+  @include media-breakpoint-up(md) {
+    svg {
+      width: $view-icon-md-w/2;
+      height: $view-icon-md-h/2;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    svg {
+      width: $view-icon-xl-w/2;
+      height: $view-icon-xl-h/2;
+    }
+  }
+}
+
+.soc-icon {
+  svg {
+    @include square-size($soc-icon-sm);
+  }
+  @include media-breakpoint-up(xl) {
+    svg {
+      @include square-size($soc-icon-xl);
+    }
+  }
+}
+
+.b-mark {
+  svg {
+    width: $mark-w;
+    height: $mark-h;
+  }
+}
+
+.s-mark {
+  svg {
+    width: $s-mark-w;
+    height: $s-mark-h;
+  }
+}
+
+.custom-checkbox {
+  @include square-size($checked);
+  svg {
+    @include square-size($checked/1.3);
+  }
+}
